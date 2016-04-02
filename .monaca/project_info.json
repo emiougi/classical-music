@@ -1,0 +1,15 @@
+{
+    "plugins": [
+        "mobi.monaca.plugins.Monaca",
+        "org.apache.cordova.splashscreen",
+        "org.apache.cordova.statusbar",
+        "org.apache.cordova.dialogs",
+        "org.apache.cordova.inappbrowser",
+        "org.apache.cordova.media"
+    ],
+    "framework_version": "3.5",
+    "xcode_version": "6",
+    "cordova_version": "3.5",
+    "plugin_settings": [],
+    "external_plugins": []
+}

@@ -1,0 +1,25 @@
+<!-- 実質トップページ -->
+<ons-page id="my-page" ng-controller="modalController">
+
+<span ng-controller="soundController as sc" ng-init="stop();"></span>
+
+<iframe src="./banners/index_header.html" style="width:100%; height:50px" frameborder=0></iframe>
+<div align="center"><img src="./images/main_image.png"  style="max-width:100%; height:auto;" /></div>
+
+
+
+
+            <div align="center" onclick="myNavigator.pushPage('sound_1.html')" style="margin-bottom:6px;">
+            <div class="home-link" style="background-image: url('./images/btn_background_image.jpg'); ">初心者のためのクラシック</div>
+        </div>
+            <div align="center" onclick="myNavigator.pushPage('sound_2.html')" style="margin-bottom:6px;">
+            <div class="home-link" style="background-image: url('./images/btn_background_image.jpg'); ">目覚めのクラシック</div>
+        </div>
+            <div align="center" onclick="myNavigator.pushPage('sound_3.html')" style="margin-bottom:6px;">
+            <div class="home-link" style="background-image: url('./images/btn_background_image.jpg'); ">元気の出るクラシック、</div>
+        </div>
+            <div align="center" onclick="myNavigator.pushPage('sound_4.html')" style="margin-bottom:6px;">
+            <div class="home-link" style="background-image: url('./images/btn_background_image.jpg'); ">モーツアルトメドレー</div>
+        </div>
+    
+<iframe src="./banners/index_footer.html" style="width:100%; height:50px" frameborder=0></iframe></ons-page>

@@ -1,0 +1,24 @@
+<!-- 実質トップページ -->
+<ons-page id="recommend"  ng-controller="recommendController as rc">
+<ons-toolbar>
+    <div class="center">おすすめアプリ</div>
+</ons-toolbar>
+
+<div id="recapps">
+
+<div ng-repeat="app in recapps">
+    <div style="padding:2px;">
+        <div style="float:left; margin-right:6px; padding:4px">
+        <a href="{{app.download_url}}" class="banner"><img src="{{app.img_url}}" class="rounded-img" width="50" height="50" /></a></div>
+        <div style="padding-top:0px; padding-left:20px;">
+            <a href="{{app.download_url}}" class="banner"><font style="font-weight:bold; font-size:18px;">{{app.name}}</font></a><br />
+            <div style="font-size:14px; margin-top:4px">{{app.description}}</div>
+        </div>
+    <hr style="margin:0px; clear:both" />
+    </div>
+</div>
+<!-- endof ngrepeat -->
+
+</div>
+</ons-page>
+

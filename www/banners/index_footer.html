@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+        <script src="../components/monaca-jquery/jquery.js"></script>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script>
+    //広告をタップするとそのままリンク先を開いてしまうことがありますので、その対策を記述します。
+$(document).delegate("a", "click", function() {
+    var href = $(this).attr('href');
+    if (href == "" || href == null) {
+        return;
+    }
+    if (href.match(/nend\.net\/click.php/) || href.match(/mobile\.co\.jp\//)) {
+        console.log("広告がクリックされました。次のURLに移動します。: " + href);
+        parent.open(href, '_system');
+        return false;
+    }
+});
+</script>
+</head>
+<body style="padding:0px; margin:0px">
+<script type="text/javascript">
+var nend_params = {"media":34313,"site":199664,"spot":561419,"type":1,"oriented":3};
+</script>
+<script type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js"></script></body>
+</html>

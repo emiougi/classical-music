@@ -1,0 +1,57 @@
+<html ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="sound.css">
+<script>
+    var myApp = angular.module('myApp', ['onsen']);
+</script>
+    <script src="./library.js"></script>
+    <script src="./soundCtl.js"></script>
+    <script src="./recommendCtl.js"></script>
+    <script src="./modalCtl.js"></script>
+    
+    <style>
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+    .page__background {
+        background:url("./images/background_image.png") center center;
+        background-size:cover;
+        }
+    </style>
+
+
+
+
+        
+</head>
+<body>
+
+<div id="nend_wrapper_rect_home" style="display:none"><script type="text/javascript">
+var nend_params = {"media":34313,"site":199664,"spot":561417,"type":1,"oriented":3};
+</script>
+<script type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js"></script></div>
+
+    <ons-tabbar var="tabbar">
+        <ons-tabbar-item
+            icon="home"
+            label="Home"
+            page="home_navigator.html"
+            active="true"></ons-tabbar-item>
+        <ons-tabbar-item
+            icon="comment"
+            label="このアプリについて"
+            page="about.html"></ons-tabbar-item>
+        <ons-tabbar-item
+            icon="star"
+            label="おすすめ"
+            page="recommend.html"></ons-tabbar-item>
+    </ons-tabbar>
+
+</body>
+</html>

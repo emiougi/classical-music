@@ -1,0 +1,113 @@
+/* This is a CSS file */
+
+div.home
+{
+    padding:0px;
+    margin:0px;
+    padding-bottom:60px;
+}
+
+div.reading-page
+{
+    padding:0px;
+    margin:0px;
+    padding-bottom:60px;
+}
+
+div.sound-panel
+{
+    padding : 5px;
+    margin  : 10px;
+    /* 文字サイズ：内容に合わせて、「font-size:small;」や「font-size:large;」等に変更下さい */
+    font-size : normal;
+    
+    /* 文字色： #000000 - #ffffffの範囲で設定して下さい */
+    color: #000000;
+    
+    /* 背景色：rgba形式で設定して下さい */
+    background-color : rgba(255,255,255, 0.9);
+    
+    border: 1px solid #ffffff;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    
+    
+}
+
+div.reading-content
+{
+    padding:0px;
+    margin:0px;
+}
+
+a.page-list
+{
+    width:80%;
+    margin:6px auto;
+}
+
+
+a.favoriteBtn
+{
+    padding:3px 6px;
+}
+
+.ui-header .ui-title {
+  margin-left: 14%;
+  margin-right: 12%
+}
+
+div#reading-list
+{
+    -webkit-overflow-scrolling: touch;
+    width:320px;
+    left:0;
+    overflow:scroll;
+    position: fixed;
+    top: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+div#reading-list > * {
+    -webkit-transform: translateZ(0px);
+}
+
+div.about-panel
+{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    padding:12px;
+    margin:8px;
+    background-color: rgba(0,0,0, 0.6);
+    color: #fff;
+    text-shadow: none;
+}
+
+div#recapps
+{
+    background-color: #fff; 
+}
+
+a.banner
+{
+    color:#000;
+    text-decoration:none;
+}
+
+
+div.home-link
+{
+    color: #FF0000;
+    font-size:18px;
+    background-size:cover;
+    width:270px;
+    height:45px;
+    padding:auto;
+    vertical-align:middle;
+    display:table-cell;
+    text-shadow:none;
+    font-weight: bold;
+}
